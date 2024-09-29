@@ -1,7 +1,7 @@
 import "reflect-metadata";
 import { injectable } from "inversify";
-import httpClient from "@/core/http/client";
 import { LoginDTO, LoginResponseDTO } from "@/common/dtos/auth.dtos";
+import httpClient from "@/core/http/client";
 
 export interface IAuthDataSource {
     login: (payload: LoginDTO) => Promise<LoginResponseDTO>;
