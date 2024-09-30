@@ -1,6 +1,6 @@
 import { setCookie, getCookie, deleteCookie } from 'cookies-next';
 
-export const setSession = (key: string, sessionData: any) => {
+export const setSession = <t>(key: string, sessionData: t) => {
     setCookie(key, JSON.stringify(sessionData), {
         maxAge: 60 * 60 * 24, // 1 day
     });
