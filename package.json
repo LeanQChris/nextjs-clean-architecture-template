@@ -1,7 +1,7 @@
 {
-  "name": "next-clean-template",
+  "name": "nextjs-clean-template",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -39,6 +39,5 @@
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
-  },
-   "license": "MIT"
+  }
 }
