@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -21,9 +21,9 @@
     "cookies-next": "^4.2.1",
     "inversify": "^6.0.2",
     "lucide-react": "^0.446.0",
-    "next": "14.2.13",
-    "react": "^18",
-    "react-dom": "^18",
+    "next": "15.3.4",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
     "react-hook-form": "^7.53.0",
     "reflect-metadata": "^0.2.2",
     "tailwind-merge": "^2.5.2",
@@ -32,12 +32,16 @@
   },
   "devDependencies": {
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "19.1.8",
+    "@types/react-dom": "19.1.6",
     "eslint": "^8",
-    "eslint-config-next": "14.2.13",
+    "eslint-config-next": "15.3.4",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
+  },
+  "overrides": {
+    "@types/react": "19.1.8",
+    "@types/react-dom": "19.1.6"
   }
 }
